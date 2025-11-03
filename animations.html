@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #grok{
+            /*animation-name: myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 5;*/
+            animation: myanimation 3s 5;
+        }
+        #vs{
+            animation:slidein 3s 2;
+        }
+        .mydiv{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            animation: rotate;
+
+        }
+        @keyframes slidein{
+            from{transform: translateX(0);
+            color: blue;
+        }
+            to{transform: translateX(600px);
+            color: darkorange;
+        }
+        }
+        @keyframes myanimation {
+            0%{color: red;}
+            25%{color: green;}
+            50%{color: purple;}
+            100%{color: blue;}
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            100%{
+                transform: rotate(360deg);
+                background-color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="vs">Welcome to my site</h1>
+    <p id="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam id qui obcaecati ullam libero facere aut, ratione porro enim voluptate totam distinctio fugiat necessitatibus minus illum laboriosam provident incidunt. Earum.</p>
+    <div class="mydiv">
+        <p>Animations</p>
+    </div>
+</body>
+</html>
