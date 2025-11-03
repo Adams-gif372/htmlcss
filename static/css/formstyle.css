@@ -1,0 +1,38 @@
+body{
+    background-color: lightcoral;
+    font-family: Georgia;
+}
+h2{
+    color: aqua;
+    text-align: center;
+}
+form{
+    background-color: bisque;
+    border: 1px solid orangered;
+    width: 300px;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    border: 1px solid cyan;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+}
+button{
+    background-color: cyan;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: orangered;
+    font-size: 16px;
+    padding: 20px;
+}

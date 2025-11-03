@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="static/css/registrationform.css">
+</head>
+<body>
+<h2>student registration form</h2>
+<form action="">
+    <fieldset>
+        <legend>Personal Information</legend>
+    <label for="fname">FullName</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="pass"><br><br>
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob" name="dob"><br><br>
+    <label>Gender</label><br>
+    <label for="f">Female</label>
+
+<!--    radio button-->
+    <input type="radio" value="female" id="f" name="gender"><br>
+    <label for="m">Male</label>
+    <input type="radio" value="male" id="m" name="gender"><br>
+        </fieldset>
+<!--    checkbox-->
+    <fieldset>
+        <legend>Academic Information</legend>
+    <label>interests</label>
+    <label for="r">reading</label>
+    <input type="checkbox" value="reading" id="r"><br>
+    <label for="s">sports</label>
+    <input type="checkbox" value="sports" id="s"><br>
+    <label for="prog">programming</label>
+    <input type="checkbox" value="programming" id="prog"><br>
+<!--    select-->
+    <label for="course">Course</label>
+    <select id="course" name="course">
+        <option value="web development">web development</option>
+        <option value="cybersecurity">cybersecurity</option>
+        <option value="data science">data science</option>
+        <option value="artificial intelligence">artificial intelligence</option>
+    </select><br>
+    <textarea cols="30" rows="10" placeholder="Tell us about yourself"></textarea><br>
+    <label for="file">upload files</label>
+    <input type="file" id="file" accept=".jpg,.jpeg,.png"><br>
+</fieldset>
+    <button type="submit">Register</button>
+    <button type="reset">Clear Form</button>
+</form>
+
+</body>
+</html>
